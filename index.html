@@ -29,7 +29,7 @@
 				$menutype = "tapas";
 				$query1 = "SELECT * FROM adare WHERE = " . $menutype;
 				$Results = @mysqli_query($conn, $query1);
-				$NumFields = @mysqli_num_fields($ResultSet);
+				$NumFields = @mysqli_num_fields($Results);
 				$Output = @mysqli_fetch_row($Results)
 				echo {$Output[0]};
 			?>
