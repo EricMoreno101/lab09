@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+ 
+<head> 
+	<meta name="viewport" content="width-device-width">
+	<title>Adare Menus</title> 
+	<meta charset="utf-8"> 
+	<link href="adare_menu.css" rel="stylesheet" type="text/css">
+</head> 
+ 
+
+<body>
+<?php
+	define ( 'DB_HOST', 'localhost' );
+    define ( 'DB_USER', 'adare' );
+    define ( 'DB_PASSWORD', 'password' );
+    define ( 'DB_NAME', 'adare' );
+	//establish connection
+	$conn = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD) ;
+	//access the right database
+	$DBSelect = @mysqli_select_db($conn, DB_NAME) ;
+?>
+
+	<div id="main_container">
+		 
+		<div id="tapas">
+			<h2>tapas </h2>
+			<?php
+				$menutype = "tapas";
+				$query1 = "SELECT * FROM adare WHERE = " . $menutype;
+				$Results = @mysqli_query($conn, $query1);
+				$NumFields = @mysqli_num_fields($ResultSet);
+				$Output = @mysqli_fetch_row($Results)
+				echo $Output[0];
+			?>
+		</div><!-- end the intro column div -->
+		 
+		<div id="desserts">
+			<h2>desserts</h2>
+			<!-- <img src="images/lindisfarne_gospels.jpg"> -->
+
+		</div><!-- end the current column div -->
+		 
+		<div id="entries">
+			<h2>Entries</h2>
+			<!-- <img src="images/zang_tumb_tumb.png" style="width:420px;"> -->
+
+		</div><!-- end the coming soon column div -->
+	  
+		<div id="drinks">
+			<h2>Drinks</h2>
+			<!-- <img src="images/zang_tumb_tumb.png" style="width:420px;"> -->
+
+		</div><!-- end the coming soon column div -->
+	  
+	</div><!-- end the main container div -->
+
+</body>
+</html>

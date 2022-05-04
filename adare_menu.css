@@ -1,0 +1,201 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+#main_container
+{
+  text-align: center;	
+  background-color:#FFFFFF;
+  max-width:1100px;
+  background-image: url(images/x-gray.png);
+}
+
+h1
+{
+  font-family: URW Chancery L, "cursive";
+  font-size: 38px;
+  font-style: italic;
+  margin: 16px;
+  margin-top: 100px;
+}
+
+img
+{
+  width: 100%;
+}
+
+#tapas
+{
+  background-color:#FFFFFF;
+  margin:18px;
+  margin-top:100px;
+  font-size:28px;
+  line-height:50px;
+  font-style: italic;
+  width:90%;
+  margin-right:10%;
+  margin-left:15%;
+  text-align: center;
+}
+
+.x
+{
+  font-weight:bold;
+  font-size: 48px;
+}
+
+h2
+{
+  margin:19px;
+  margin:4px;
+  font-family: Arial, "Times New Roman";
+  font-size: 15px;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#desserts
+{
+  /*background-color:#FFFFFF;
+  margin-left:1%;
+  width: 90%;*/
+
+  background-color:#FFFFFF;
+  margin:18px;
+  margin-top:100px;
+  font-size:28px;
+  line-height:50px;
+  font-style: italic;
+  width:90%;
+  margin-right:10%;
+  margin-left:15%;
+  text-align: center;  
+}
+
+h3
+{
+  margin: 12px;
+  margin-bottom: 4px;
+  font-family: Arial, "Times New Roman";
+  font-size: 20px;
+  font-style: italic;
+}
+
+p
+{
+  font-size:14px;
+  font-family:Snell Roundhand, "cursive";
+  font-style: bold;
+}
+
+#entries
+{
+  /*background-color:#FFFFFF;
+  margin-left:1%;
+  width:90%;*/
+  
+  background-color:#FFFFFF;
+  margin:18px;
+  margin-top:100px;
+  font-size:28px;
+  line-height:50px;
+  font-style: italic;
+  width:90%;
+  margin-right:10%;
+  margin-left:15%;
+  text-align: center;
+}
+
+#drinks
+{
+  /*background-color:#FFFFFF;
+  margin-left:1%;
+  width:90%;*/
+  
+  background-color:#FFFFFF;
+  margin:18px;
+  margin-top:100px;
+  font-size:28px;
+  line-height:50px;
+  font-style: italic;
+  width:90%;
+  margin-right:10%;
+  margin-left:15%;
+  text-align: center;
+}
+
+@media (min-width: 690px)
+{
+  #main_container
+  {
+	overflow:hidden;
+  }
+  
+  #tapas
+  {
+	float:left;
+	margin-left:5%;
+	width:90%;
+  }
+
+  #desserts
+  {
+	width:43%;
+	margin-left:5%;
+	float:left;
+  }
+  
+  #entries
+  {
+	 width:43%;
+	 margin-left:5%;
+	 float:right;
+  }
+  
+  #drinks
+  {
+	 width:43%;
+	 margin-left:5%;
+	 float:right;
+  }
+  
+}
+
+@media (min-width:1015px)
+{
+  body
+  {
+	background-image: url(images/x-gray.png);
+  }
+  
+  #tapas
+  {
+	width:25%;
+	/*margin-left:4%;\*
+  }
+  
+  #desserts
+  {
+	width:25%;
+	/*clear:none;
+	margin-left:4%;*/
+  }
+  
+  #entries
+  {
+	width:25%;
+	/*margin-left:2%;
+	margin-right:4%;*/
+  }
+  
+  #drinks
+  {
+	width:25%;
+	/* margin-left:2%;
+	margin-right:4%; */
+  }
+}
+
