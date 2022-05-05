@@ -10,29 +10,11 @@
  
 
 <body>
-<?php
-	define ( 'DB_HOST', 'localhost' );
-    define ( 'DB_USER', 'adare' );
-    define ( 'DB_PASSWORD', 'password' );
-    define ( 'DB_NAME', 'adare' );
-	//establish connection
-	$conn = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD) ;
-	//access the right database
-	$DBSelect = @mysqli_select_db($conn, DB_NAME) ;
-?>
-
+	<a href="menu.php">MENU</a>
 	<div id="main_container">
 		 
 		<div id="tapas">
-			<h2>tapas </h2>
-			<?php
-				$menutype = "tapas";
-				$query1 = "SELECT * FROM adare WHERE = " . $menutype;
-				$Results = @mysql_query($query1);
-				
-				$Output = @mysql_fetch_assoc($Results);
-				echo "{$Output[1]}";
-			?>
+			
 		</div><!-- end the intro column div -->
 		 
 		<div id="desserts">
