@@ -31,7 +31,7 @@
 				$Results = @mysql_query($query1);
 				$NumFields = @mysql_num_fields($Results);
 				$Output = @mysql_fetch_assoc($Results)
-				echo $Output[0];
+				echo $Output["item_description"];
 			?>
 		</div><!-- end the intro column div -->
 		 
