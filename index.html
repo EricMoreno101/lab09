@@ -29,9 +29,9 @@
 				$menutype = "tapas";
 				$query1 = "SELECT * FROM adare WHERE = " . $menutype;
 				$Results = @mysql_query($query1);
-				$NumFields = @mysql_num_fields($Results);
+				
 				$Output = @mysql_fetch_assoc($Results);
-				echo $Output["item_description"];
+				echo $Output['item_description'];
 			?>
 		</div><!-- end the intro column div -->
 		 
