@@ -49,11 +49,11 @@
 
     define ( 'DB_HOST', 'localhost' );
 
-    define ( 'DB_USER', 'MY_USERNAME' );  // Replace my_username with the username of your choice.
+    define ( 'DB_USER', 'adare' );  // Replace my_username with the username of your choice.
 
-    define ( 'DB_PASSWORD', 'MY_PASSWORD' ); // Replace my_password with the actual password associate with the user.
+    define ( 'DB_PASSWORD', 'password' ); // Replace my_password with the actual password associate with the user.
 
-    define ( 'DB_NAME', 'MY_DATABASE' ); // Replace my_database with the actual database name
+    define ( 'DB_NAME', 'adare' ); // Replace my_database with the actual database name
 
     $conn = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD) ;
 
