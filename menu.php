@@ -83,7 +83,7 @@
 
     // Quary database table -- selecting employees table for any employee hired after Januray 1, 2000
 
-    $SQL = "SELECT * FROM menu WHERE item_type = 'Tapas'" ;
+    $SQL = "SELECT * FROM menu WHERE item_type = 'tapas'" ;
 
     $ResultSet = @mysqli_query($conn, $SQL) ;
 
@@ -135,7 +135,7 @@
 
     
 
-    $SQL = "SELECT * FROM menu WHERE item_type = 'Entries'" ;
+    $SQL = "SELECT * FROM menu WHERE item_type = 'entries'" ;
 
     $ResultSet = @mysqli_query($conn, $SQL) ;
 
